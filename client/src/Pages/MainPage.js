@@ -15,7 +15,7 @@ const MainPage = () => {
   }, []);
 
   return (
-    <div className="h-full bg-slate-400">
+    <div className="h-full bg-[#58e2f5]">
       <div className="text-center text-white font-extrabold text-3xl p-3 rounded-md">
         <h1> Aviral Train Services </h1>
       </div>
@@ -48,7 +48,7 @@ const MainPage = () => {
 
             {TrainData.map((data, index) => (
               <tbody data-index={index} className="align-baseline" key={index}>
-                <tr className="group cursor-pointer hover:bg-gray-100">
+                <tr className="group cursor-pointer hover:bg-[#daf8ff]">
                   <td className="text-sm p-3 border-t border-grey-light whitespace-no-wrap">
                     {data.trainName}
                   </td>
@@ -65,8 +65,8 @@ const MainPage = () => {
                     {data.seatsAvailable.sleeper + data.seatsAvailable.AC}
                   </td>
 
-                  <td className="text-sm p-3 border-t border-grey-light whitespace-no-wrap text-sm group-hover:visible">
-                    <button className="bg-red-300 p-3 rounded-lg">
+                  <td className="p-3 border-t border-grey-light whitespace-no-wrap text-sm group-hover:visible">
+                    <button className="bg-[#0204fd] p-3 rounded-lg text-white">
                       <Link to={`/${data?.trainNumber}`}> Get Details </Link>
                     </button>
                   </td>
